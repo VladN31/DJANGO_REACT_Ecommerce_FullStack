@@ -24,6 +24,7 @@ function HomeScreen() {
         { loading ? <Loader />
         : error ? <Message variant ='danger'>{error}</Message>
         : 
+        
         <Row>
             {products.map(product => (
                 <Col key={product._id} sm={12} md={6} >
